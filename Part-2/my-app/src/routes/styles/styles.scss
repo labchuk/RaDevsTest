@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+
+.list {
+  width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 100px auto;
+  li{
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  li:last-child{
+    margin-bottom: 0;
+  }
+
+}
+
+
+
+#signupForm{
+  width: 550px;
+  margin: 100px auto;
+  text-align: center;
+  .title{
+    margin-bottom: 15px;
+  }
+
+  fieldset {
+    display: none;
+    background: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px 2px #ccc;
+    margin: 0 10%;
+    position: relative;
+  }
+  .fieldsetActive{
+    display: block;
+  }
+  .field{
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #2c3e50;
+    font-size: 14px;
+  }
+  .btn{
+    width: 100px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgba(18, 38, 166, 0.47);
+    cursor: pointer;
+  }
+}
+
+.alert{
+  display: none;
+  background-color: rgb(225, 146, 146);
+  color: #fff;
+  width: 300px;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+  padding: 20px;
+  margin: -10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.active{
+  display: flex;
+}
+
+.container{
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6e9ff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px #abb7e9;
+  margin: 20px;
+
+  .progressBar{
+    height: 30px;
+    width: 80%;
+    box-shadow: 2px 14px 15px -7px rgba(30, 166, 250, 0.36);
+    border-radius: 50px;
+    background: #fff;
+    transition: all 0.5s;
+    .line{
+      padding-left: 10px;
+      padding-top: 5px;
+      font-size: 12px;
+      height: 100%;
+      background: #1da1f2;
+      border-radius: 50px;
+      animation: progressBar 6s infinite;
+    }
+  }
+}
+
+@keyframes progressBar{
+  0%{width: 0%;}
+  100%{width: 100%;}
+}
+
+
+
